@@ -1,0 +1,25 @@
+{
+    "name": "hahadu/wechat-pay",
+    "description": "微信支付,基于官方SDK",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "php": ">=5.6"
+
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "hahadu",
+            "email": "582167246@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hahadu\\WechatPay\\": "src/"
+        }
+    },
+        "minimum-stability": "dev"
+}
