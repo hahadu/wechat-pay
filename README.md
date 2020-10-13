@@ -53,7 +53,7 @@ use Hahadu\WechatPay\Kernel\WxPayApi;
         $openId = $tools->GetOpenid(); //获取微信OpenID
         //②、统一下单
         $input = new WxPayUnifiedOrder();
-        $input->SetBody("666"); //订单标题
+        $input->SetBody("test"); //订单标题
         $input->SetOut_trade_no("sdkphp".date("YmdHis")); //商户订单号
         $input->SetTotal_fee("1"); //订单金额
         $input->SetTime_start(date("YmdHis")); //订单创建时间
