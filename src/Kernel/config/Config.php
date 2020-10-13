@@ -35,6 +35,7 @@ class Config
      */
     public $proxyHost = "0.0.0.0";
     public $proxyPort = 0;
+    public $sandbox = false;
 
     /**
      * TODO：接口调用上报等级，默认紧错误上报（注意：上报超时间为【1s】，上报无论成败【永不抛出异常】，

@@ -16,13 +16,32 @@
  **/
 
 namespace Hahadu\WechatPay\Kernel\config;
+use Hahadu\WechatPay\Kernel\config\Config;
 
 class WxPayConfig extends WxPayConfigInterface
 {
     private $options;
+    /****
+     * WxPayConfig constructor.
+     * @param Config $options
+     */
     public function __construct($options){
         $this->options = $options;
     }
+    /****
+     * 沙箱模式
+     *
+     */
+    public function GetApiUrl(){
+        $api_url = 'https://api.mch.weixin.qq.com';
+        if(true == $this->options->sandbox){
+            return $api_url .= '/sandboxnew';
+        }
+        return $api_url;
+    }
+
+
+
     /**
      * TODO: 修改这里配置为您自己申请的商户信息
      * 微信公众号信息配置
