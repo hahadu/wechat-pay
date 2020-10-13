@@ -24,6 +24,7 @@ Hahadu\WechatPay\Kernel\config\WxPayConfig
         $options->Key =  ''; //key
         $options->AppSecret = ''; //AppSecret
        // $options->SignType = ''; // SingType 默认值HMAC-SHA256
+       // $options->sandbox = true;  //开启沙箱模式（微信支付仿真系统sandboxnew）
         $wechatConfig = new WxPayConfig($options);
     
 ````
