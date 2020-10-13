@@ -54,7 +54,7 @@ class WxPayApi
      * @param WxPayUnifiedOrder $inputObj
      * @param int $timeOut
      * @throws WxPayException
-     * @return 成功时返回，其他抛异常
+     * @return array|false 成功时返回，其他抛异常
      */
     public static function unifiedOrder($config, $inputObj, $timeOut = 6)
     {
