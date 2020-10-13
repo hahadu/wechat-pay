@@ -3,10 +3,10 @@
 
 命名空间对应：
 ```
-Hahadu\WechatPay\Kernel\WxPayData => lib/WxPay.Data.php
-Hahadu\WechatPay\Kernel\WxPayApi => lib/WxPay.Api.php
+Hahadu\WechatPay\Kernel\WxPayData  => lib/WxPay.Data.php
+Hahadu\WechatPay\Kernel\WxPayApi   => lib/WxPay.Api.php
 Hahadu\WechatPay\Kernel\WxPayException => lib/WxPay.Exception.php
-Hahadu\WechatPay\Kernel\WxPayNotify  => lib/WxPay.Notify.php
+Hahadu\WechatPay\Kernel\WxPayNotify    => lib/WxPay.Notify.php
 Hahadu\WechatPay\Kernel\config\WxPayConfigInterface => lib/WxPay.Config.Interface.php
 ```
 使用 
