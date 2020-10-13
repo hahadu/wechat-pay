@@ -1,7 +1,8 @@
 # wechat-pay
 ###微信支付（基于官方SDK做PSR4支持）
 
-安装：composer require hahadu/wechat-pay
+* 安装：composer require hahadu/wechat-pay
+
 命名空间对应：
 ```
 Hahadu\WechatPay\Kernel\WxPayData  => lib/WxPay.Data.php
