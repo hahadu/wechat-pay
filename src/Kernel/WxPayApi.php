@@ -29,6 +29,7 @@ use Hahadu\WechatPay\Kernel\WxPayData\WxPayReverse;
 use Hahadu\WechatPay\Kernel\WxPayData\WxPayReport;
 use Hahadu\WechatPay\Kernel\WxPayData\WxPayBizPayUrl;
 use Hahadu\WechatPay\Kernel\WxPayData\WxPayShortUrl;
+use Hahadu\WechatPay\Kernel\WxPayException;
 
 
 /**
@@ -45,7 +46,6 @@ class WxPayApi
      * @var string
      */
     public static $VERSION = "3.0.10";
-    public $api_url = 'https://api.mch.weixin.qq.com/';
 
     /**
      *
@@ -426,6 +426,7 @@ class WxPayApi
     public static function shorturl($config, $inputObj, $timeOut = 6)
     {
         $url = $config->GetApiUrl()."/tools/shorturl";
+        dump($url);
         //检测必填参数
         if(!$inputObj->IsLong_urlSet()) {
             throw new WxPayException("需要转换的URL，签名用原串，传输需URL encode！");

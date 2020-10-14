@@ -41,7 +41,6 @@ class WechatNativePay
         $biz = new WxPayBizPayUrl();
         $biz->SetProduct_id($productId);
         try{
-            //$config = new WxPayConfig();
             $values = WxpayApi::bizpayurl($this->config, $biz);
         } catch(Exception $e) {
             return [

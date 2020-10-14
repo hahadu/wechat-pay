@@ -16,6 +16,7 @@
  **/
 
 namespace Hahadu\WechatPay\Kernel\WxPayData;
+use Hahadu\WechatPay\Kernel\WxPayException;
 /**
  *
  * 接口调用结果类
