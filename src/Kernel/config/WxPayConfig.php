@@ -72,6 +72,9 @@ class WxPayConfig extends WxPayConfigInterface
 
     public function GetSignType()
     {
+        if(empty($this->options->SignType)){
+            return "HMAC-SHA256";
+        }
         return $this->options->SignType;
     }
 
@@ -83,6 +86,8 @@ class WxPayConfig extends WxPayConfigInterface
      */
     public function GetProxy(&$proxyHost, &$proxyPort)
     {
+        $proxyHost = $this->options->proxyHost;
+        $proxyPort = $this->options->proxyPort;
     }
 
     /**

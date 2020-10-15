@@ -17,6 +17,7 @@
 
 namespace Hahadu\WechatPay\Kernel\WxPayData;
 use Hahadu\WechatPay\Kernel\WxPayException;
+use Hahadu\WechatPay\Kernel\config\WxPayConfigInterface;
 /**
  *
  * 数据对象基础类，该类中定义数据类最基本的行为，包括：
