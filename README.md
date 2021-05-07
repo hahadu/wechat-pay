@@ -4,7 +4,7 @@
 * 安装：composer require hahadu/wechat-pay
 
 命名空间对应：
-```
+```php
 Hahadu\WechatPay\Kernel\WxPayData  => lib/WxPay.Data.php
 Hahadu\WechatPay\Kernel\WxPayApi   => lib/WxPay.Api.php
 Hahadu\WechatPay\Kernel\WxPayException => lib/WxPay.Exception.php
@@ -12,7 +12,7 @@ Hahadu\WechatPay\Kernel\WxPayNotify    => lib/WxPay.Notify.php
 Hahadu\WechatPay\Kernel\config\WxPayConfigInterface => lib/WxPay.Config.Interface.php
 ```
 使用 
-````
+````php
 use Hahadu\WechatPay\Kernel\config\Config;
 Hahadu\WechatPay\Kernel\config\WxPayConfig
 //传入配置:
@@ -29,7 +29,7 @@ Hahadu\WechatPay\Kernel\config\WxPayConfig
     
 ````
 扫码支付：
-```
+```php
 use Hahadu\WechatPay\Library\WechatNativePay;
 use Hahadu\WechatPay\Kernel\WxPayData\WxPayUnifiedOrder;
        
@@ -48,7 +48,7 @@ use Hahadu\WechatPay\Kernel\WxPayData\WxPayUnifiedOrder;
 ```
 
 JSAPI支付
-```puml
+```php
 use Hahadu\WechatPay\Library\WechatJsApiPay;
 use Hahadu\WechatPay\Kernel\WxPayData\WxPayUnifiedOrder;
 use Hahadu\WechatPay\Kernel\WxPayApi;
